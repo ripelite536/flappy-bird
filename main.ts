@@ -67,7 +67,6 @@ class ActionKind {
     }
     
 }
-ActionKind.__initActionKind()
 scene.setBackgroundColor(9)
 info.setScore(0)
 effects.blizzard.startScreenEffect()
