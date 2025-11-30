@@ -26,47 +26,6 @@ let bottomImage: Image = null
 let topImage: Image = null
 let gap = 0
 let mySprite: Sprite = null
-class ActionKind {
-    static Walking: number
-    private ___Walking_is_set: boolean
-    private ___Walking: number
-    get Walking(): number {
-        return this.___Walking_is_set ? this.___Walking : ActionKind.Walking
-    }
-    set Walking(value: number) {
-        this.___Walking_is_set = true
-        this.___Walking = value
-    }
-    
-    static Idle: number
-    private ___Idle_is_set: boolean
-    private ___Idle: number
-    get Idle(): number {
-        return this.___Idle_is_set ? this.___Idle : ActionKind.Idle
-    }
-    set Idle(value: number) {
-        this.___Idle_is_set = true
-        this.___Idle = value
-    }
-    
-    static Jumping: number
-    private ___Jumping_is_set: boolean
-    private ___Jumping: number
-    get Jumping(): number {
-        return this.___Jumping_is_set ? this.___Jumping : ActionKind.Jumping
-    }
-    set Jumping(value: number) {
-        this.___Jumping_is_set = true
-        this.___Jumping = value
-    }
-    
-    public static __initActionKind() {
-        ActionKind.Walking = 0
-        ActionKind.Idle = 1
-        ActionKind.Jumping = 2
-    }
-    
-}
 scene.setBackgroundColor(9)
 info.setScore(0)
 effects.blizzard.startScreenEffect()
